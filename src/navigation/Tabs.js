@@ -16,7 +16,6 @@ const Tab = createBottomTabNavigator();
 //J'initialise mon composant fonction
 const Tabs = () => {
 return (
-    <NavigationContainer>
         <Tab.Navigator
         tabBarOptions={{
             showLabel: false,
@@ -85,7 +84,7 @@ return (
                     
                 }}/>
     </Tab.Navigator>
-    </NavigationContainer>
+
     );
 }
 
