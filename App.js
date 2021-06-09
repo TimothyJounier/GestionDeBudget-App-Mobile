@@ -1,22 +1,23 @@
 import React from 'react';
-import { StatusBar, StyleSheet, View, Text, SafeAreaView } from "react-native";
+import { StyleSheet, View, SafeAreaView } from "react-native";
+import MyStack from './src/navigation/Stack';
+
+import Tabs from './src/navigation/Tabs';
 
 export default function App() {
   return (
+    <SafeAreaView>
       <View style={styles.container}>
-        <SafeAreaView>
-        <StatusBar />
           {/* //J'appelle ma navigation */}
-          <View>
-            <Text>Hello</Text>
-          </View>
-        </SafeAreaView>
+          <Tabs/>
       </View>
+    </SafeAreaView>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
-      flex: 1,
+      width: '100%',
+      height:'100%',
   },
 });
