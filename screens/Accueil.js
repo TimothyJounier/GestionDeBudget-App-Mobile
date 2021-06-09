@@ -28,7 +28,11 @@ const Accueil = ({ navigation }) => {
                                 style={styles.button}
                                 onPress={() => navigation.navigate('AddDepenses')}
                             >
-                            <Text>+ Add Dépenses</Text>
+                                <Image 
+                                    style={styles.image}
+                                    source={require('../src/assets/icons/depenses.png')}
+                    />
+                            <Text style={styles.text}> Add Dépenses</Text>
                             </TouchableOpacity>
                     </View>
 
@@ -37,7 +41,11 @@ const Accueil = ({ navigation }) => {
                         style={styles.button}
                         onPress={() => navigation.navigate('AddRevenus')}
                 >
-                    <Text>+ Add Revenus</Text>
+                    <Image 
+                        style={styles.image}
+                        source={require('../src/assets/icons/Revenus.png')}
+                    />
+                    <Text style={styles.text}>Add Revenus</Text>
                     </TouchableOpacity>
                     </View>
                 </View>
@@ -64,16 +72,18 @@ const styles = StyleSheet.create ({
         flexDirection:'row',
         width: '100%',
         height: '13%',
-        backgroundColor:'#FFF',
+        backgroundColor:'#a3a4dc',
         alignItems:'center'
         
     },
     container1: {
-        width:'80%',
-        height:'35%',
-        backgroundColor:'#a3a4dc',
+        width:'85%',
+        height:'30%',
+        backgroundColor:'#FFF',
         justifyContent:'center',
         alignItems:'center',
+        borderRadius: 14,
+        marginTop: 20
     },
     container2: {
         marginTop: 20,
@@ -93,30 +103,40 @@ const styles = StyleSheet.create ({
         fontSize: 20,
         fontWeight:'bold',
         padding: 20,
+        color: '#FFF'
+    },
+    text: {
+        color: '#FFF'
     },
     text1: {
         fontSize: 40,
         padding: 20,
-        color:'#FFFF',
+        color:'black',
     },
     text2: {
         fontSize: 50,
-        color:'#FFFF',    
+        color:'black',    
     },
     text3: {
         fontSize: 20
     },
     button: {
-        backgroundColor:'#FFF',
+        backgroundColor:'#a3a4dc',
         borderRadius: 16,
         padding: 10,
         marginBottom: 30,
+        flexDirection:'row'
     },
     img: {
         width: 50,
         height:50,
         borderRadius:100,
         left: 200
+    },
+    image: {
+        width: 20,
+        height:'100%',
+        marginRight: 4
     }
 })
 
