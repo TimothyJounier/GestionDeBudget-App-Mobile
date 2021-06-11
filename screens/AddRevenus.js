@@ -230,21 +230,21 @@ return (
 const styles = StyleSheet.create({
 container: {
     flex: 1,
-    backgroundColor: '#FFF',
+    backgroundColor: 'black',
     justifyContent:'center',
     alignItems: 'center'
 },
 input: {
     width: 250,
     height: 32,
-    backgroundColor: '#FFF',
-    borderWidth: 1.5,
-    borderColor: '#a3a4dc',
+    backgroundColor: '#37383a',
+    borderBottomWidth: 1.5,
+    borderColor: '#98955f',
     borderRadius: 10,
     paddingLeft: 5
 },
 label: {
-    color: 'black',
+    color: '#FFF',
     marginBottom: 5,
 },
 errors: {
@@ -252,7 +252,7 @@ errors: {
     fontSize: 13,
 },
 inputGroup: {
-    backgroundColor: '#FFF',
+    backgroundColor: 'black',
     width:'80%',
     height: '10%',
     marginBottom: 20,
@@ -286,7 +286,7 @@ button: {
     borderRadius: 10,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor:'#FFF',
+    backgroundColor:'#98955f',
     borderRadius: 5,
 },
 buttonText: {
@@ -295,15 +295,15 @@ buttonText: {
 input1: {
     width: 280,
     height: 60,
-    backgroundColor: '#FFF',
-    borderWidth: 1,
-    borderColor: '#FFF',
+    backgroundColor: '#37383a',
+    borderBottomWidth: 1,
+    borderColor: '#98955f',
     borderRadius: 9,
     overflow: 'hidden',
     justifyContent:'center'
 },
 containerFooter: {
-    backgroundColor: '#a3a4dc',
+    backgroundColor: 'black',
     width: '100%',
     height: '20%',
     justifyContent: 'center',

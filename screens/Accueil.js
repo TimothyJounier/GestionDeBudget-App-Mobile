@@ -52,7 +52,7 @@ const Accueil = ({ navigation }) => {
             </View>
             <View style={styles.container2}>
                 <Text style={styles.text3}>Dernière activités</Text>
-                <FlatList>
+                <FlatList >
 
                 </FlatList>
             </View>
@@ -65,21 +65,21 @@ const styles = StyleSheet.create ({
     containerPrincipal: {
         width:'100%',
         height:'100%',
-        backgroundColor:'#a3a4dc',
+        backgroundColor:'black',
         alignItems:'center',
     },
     container0: {
         flexDirection:'row',
         width: '100%',
         height: '13%',
-        backgroundColor:'#a3a4dc',
+        backgroundColor:'black',
         alignItems:'center'
         
     },
     container1: {
         width:'85%',
         height:'30%',
-        backgroundColor:'#FFF',
+        backgroundColor:'#37383a',
         justifyContent:'center',
         alignItems:'center',
         borderRadius: 14,
@@ -88,9 +88,9 @@ const styles = StyleSheet.create ({
     container2: {
         marginTop: 20,
         padding: 30,
-        width:'100%',
-        height:'70%',
-        backgroundColor:'#FFF',
+        width:'85%',
+        height:'60%',
+        backgroundColor:'#37383a',
         borderTopLeftRadius: 40,
         borderTopRightRadius: 40,
         
@@ -111,17 +111,18 @@ const styles = StyleSheet.create ({
     text1: {
         fontSize: 40,
         padding: 20,
-        color:'black',
+        color:'#FFF',
     },
     text2: {
         fontSize: 50,
-        color:'black',    
+        color:'#FFF',    
     },
     text3: {
-        fontSize: 20
+        fontSize: 20,
+        color:'#FFF', 
     },
     button: {
-        backgroundColor:'#a3a4dc',
+        backgroundColor:'#98955f',
         borderRadius: 16,
         padding: 10,
         marginBottom: 30,

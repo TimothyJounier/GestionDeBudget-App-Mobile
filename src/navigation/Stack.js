@@ -9,6 +9,7 @@ import Tabs from '../navigation/Tabs';
 //J'importe les différent écran que j'utiliserais dans mon application
 import AddDepenses from '../../screens/AddDepenses';
 import AddRevenus from '../../screens/AddRevenus';
+import AccountDetailsScreen from "../../screens/CompteDetails";
 
 //Je crée un constante Stack qui est égal a la fonction createStackNavigator()
 const Stack = createStackNavigator();
@@ -34,6 +35,9 @@ const StackNavigation = () => {
                     options={{
                         headerTitle: "Dépenses",
                         headerBackTitleVisible: false,
+                        headerTintColor: '#fff',
+                        headerStyle: {
+                            backgroundColor: 'black'}
                     }}
                 />
                 <Stack.Screen
@@ -42,6 +46,20 @@ const StackNavigation = () => {
                     options={{
                         headerTitle: "Revenus",
                         headerBackTitleVisible: false,
+                        headerTintColor: '#fff',
+                        headerStyle: {
+                            backgroundColor: 'black'}
+                    }}
+                />
+                <Stack.Screen
+                    name="CompteDetails"
+                    component={AccountDetailsScreen}
+                    options={{
+                        headerTitle: "Revenus",
+                        headerBackTitleVisible: false,
+                        headerTintColor: '#fff',
+                        headerStyle: {
+                            backgroundColor: 'black'}
                     }}
                 />
             </Stack.Navigator>

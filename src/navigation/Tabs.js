@@ -19,7 +19,9 @@ return (
         <Tab.Navigator
         tabBarOptions={{
             showLabel: false,
-            
+            style: {
+                backgroundColor: 'black',
+            }
         }}
     >
         {/* Tab Accueil */}
@@ -35,7 +37,7 @@ return (
                                 style={{
                                     width: 25,
                                     height: 25,
-                                    tintColor: focused ? '#a3a4dc' : '#5d5d66',
+                                    tintColor: focused ? '#98955f' : '#5d5d66',
                                 }}
                             />
                         </View>
@@ -56,7 +58,7 @@ return (
                                 style={{
                                     width: 25,
                                     height: 25,
-                                    tintColor: focused ? '#a3a4dc' : '#5d5d66',
+                                    tintColor: focused ? '#98955f' : '#5d5d66',
                                 }}
                             />
                         </View>
@@ -76,7 +78,7 @@ return (
                                 style={{
                                     width: 25,
                                     height: 25,
-                                    tintColor: focused ? '#a3a4dc' : '#5d5d66',
+                                    tintColor: focused ? '#98955f' : '#5d5d66',
                                 }}
                             />
                         </View>
